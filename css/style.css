@@ -1,3 +1,54 @@
-table {
-	padding: 5px;
+*{
+	border: 0;
+	margin: 5;
+	padding: 0;
+}
+
+article, footer, header, section, nav{
+	display: block;
+}
+
+aside, article{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 1em;
+	text-align: center;
+	vertical-align: middle;
+	width: 50%;
+}
+
+aside{
+	width: 20%;
+}
+
+body{
+	background:  #999;
+}
+
+footer, header, nav{
+	margin: 0 auto;
+	max-width: 80%;
+	text-align: center;
+	width: 80%;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.5em;
+	vertical-align: top;
+	width: 20%;
+}
+
+footer, nav,header h1{
+	background:  #F5F;
+	border-radius: 0.5em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+section{
+	text-align: center;
 }
