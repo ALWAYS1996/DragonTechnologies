@@ -4,6 +4,7 @@
 		<title>Dragon Tecnologies</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="js/content.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="shortcut icon" type="image/x-icon" href="img/icon.ico"/>
@@ -17,7 +18,6 @@
 				</a>
 			</h1>
 			<!--Menu Principal-->
-			<br>
 			<nav >
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -28,14 +28,13 @@
 		</header>
 
 		<section id="container">
-			<br><br>
-			<!--Menu-->
+			<!--Menu Lateral-->
 			<aside id="menu">
 				<nav>
 					<table>
 						<tr>
 							<td><img alt="logo" src="img/headset.png"></td>
-							<td><a href="?headsets">Headsets</a></td>
+							<td><a href="?headset">Headsets</a></td>
 						</tr>
 						<tr>
 							<td><img alt="logo" src="img/mouse.png"></td>
@@ -43,15 +42,19 @@
 						</tr>
 						<tr>
 							<td><img alt="logo" src="img/keyboard.png"></td>
-							<td><a href="?keyboards">Keyboards</a></td>
+							<td><a href="?keyboard">Keyboards</a></td>
 						</tr>
 						<tr>
 							<td><img alt="logo" src="img/monitor.png"></td>
-							<td><a href="?monitors">Monitors</a></td>
+							<td><a href="?monitor">Monitors</a></td>
 						</tr>
 						<tr>
-							<td><img alt="logo" src="img/webcam.png"></td>
-							<td><a href="?webcams">Webcams</a></td>
+							<td><img alt="logo" src="img/pc.png"></td>
+							<td><a href="?pc">PC</a></td>
+						</tr>
+						<tr>
+							<td><img alt="logo" src="img/cart.png"></td>
+							<td><a href="?cart">Shopping cart</a></td>
 						</tr>
 					</table>
 				</nav>
@@ -59,25 +62,29 @@
 
 			<!--Contenido-->
 			<article id="main">
-				<p id="namelabel">Name <label id="name"></label></p>
-				<img id="first" src="img/background2.jpg" onclick="openModal(this)">
+				<p id="name"></p>
+				<img id="image" src="" onclick="openModal(this)">
 				<p>Brand <label id="brand"></label></p>
 				<p>Price <label id="price"></label></p>
+				<p><button id="addToCart" onclick="addItemToCart(this)">Add To Cart</button></p>
 			</article>
 
-			<!--Informacion extra-->
+			<!--Anuncios-->
 			<aside id="ads">
-				<script type="text/javascript">generateAds();</script>
+				
 			</aside>
 
+			<script type="text/javascript">generateAds();</script>
 			<script type="text/javascript">generateContent();</script>
 
+			<!--Modal-->
 			<div class="modal hidden" onclick="closeModal()">
 				<img id="modalImage" alt="logo" src="">	
 				<span onclick="closeModal()">X</span>
 			</div>
 		</section>
-		
+
+		<!--Informacion final-->
 		<footer>
 			2018 - Dragon Corp. All rights reserved
 		</footer>

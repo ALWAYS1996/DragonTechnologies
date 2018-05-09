@@ -6,9 +6,27 @@
 	padding: 0;
 }
 
+.modal{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a img{
+	margin-top: 10px;
+	width: 33%;
+}
+
+
 a{
 	color: #000;
-	font-size: 200%;
+	font-size: 150%;
 	text-decoration: none;
 	
 }
@@ -36,6 +54,45 @@ aside, article{
 	width: 50%;
 }
 
+aside{
+	width: 20%;
+}
+
+aside#menu img{
+	width: 40px;
+}
+
+aside#ads img{
+	width: 100%;
+}
+
+body{
+	background:  #AAA;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+button{
+	background: linear-gradient(#F22, #922);
+	border: 1px solid;
+	padding: 10px;
+	text-align: center;
+}
+
+button:hover {
+	background: linear-gradient(#EEE, #AAA);
+}
+
+.cartImg {
+	width: 25%;
+	height: 100%;
+}
+
+#cartButton{
+	vertical-align: middle;
+}
+
 #container {
 	display: flex;
 }
@@ -48,19 +105,61 @@ aside, article{
 	margin-right: 0px;
 }
 
-.modal{
-	display: block;
-	position: fixed;
+div#cart{
+	background: rgb(240,240,240);
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+div:last-child {
+	border-bottom: none;
+}
+
+div label {
+	margin: auto;
+	text-align: center;
+	width:25%;
+}
+
+label a:hover{
+	color: #F00;
+}
+
+footer,  nav{
+	border-radius: 0.5em;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	vertical-align: middle;
 	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.9);
-	top: 0;
-	left: 0;
+}
+
+header{
+	background: linear-gradient(#EEE, #AAA);
+	max-width: 100%;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#image{
+	width: 50%;
+	border: 1px solid #000;
+}
+
+.cartImg{
+	width: 80px;
+	border: 1px solid #000;
 }
 
 .modal img{
 	margin-top: 5%; 
-	width: 50%;
+	width: 35%;
 }
 
 .modal span{
@@ -77,35 +176,6 @@ aside, article{
 	display: none;
 }
 
-a img{
-	margin-top: 10px;
-	width: 33%;
-}
-
-aside{
-	width: 20%;
-}
-
-body{
-	background:  #AAA;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 10px;
-}
-
-footer,  nav{
-	border-radius: 0.5em;
-	margin: 0 auto;
-	max-width: 100%;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
-}
-
-label{
-	font-size: 200%;
-}
-
 nav li{
 	display: inline-block;
 	padding: 0.5em;
@@ -113,15 +183,23 @@ nav li{
 	width: 20%;
 }
 
-header{
-	background: linear-gradient(#EEE, #AAA);
-	max-width: 100%;
-	width: 100%;
+p{
+	color: #505;
+	display: block;
+	font-size: 125%;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: left;
 }
 
-h1{
+p:first-child, p:last-child{
 	text-align: center;
-	vertical-align: middle;
+	padding: 10px;
+}
+
+label{
+	font-size: 16px;
+	color: #000;
 }
 
 section{
@@ -140,25 +218,6 @@ table{
 td{
 	padding: 15px;
 	font-size: 75%;
-}
-
-aside#menu img{
-	width: 40px;
-}
-
-aside#ads img{
-	width: 100%;
-}
-
-#first{
-	width: 75%;
-}
-
-p{
-	display: block;
-	margin-left: 5px;
-	margin-top: 5px;
-	text-align: left;
 }
 
 /* Desktop high */
