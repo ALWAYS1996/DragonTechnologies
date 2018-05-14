@@ -18,7 +18,7 @@
 	padding: 0;
 }
 
-a img{
+a canvas{
 	margin-top: 10px;
 	width: 33%;
 }
@@ -85,8 +85,7 @@ button:hover {
 }
 
 .cartImg {
-	width: 25%;
-	height: 100%;
+	width: 400px;
 }
 
 #cartButton{
@@ -152,9 +151,9 @@ h1{
 	border: 1px solid #000;
 }
 
-.cartImg{
-	width: 80px;
-	border: 1px solid #000;
+#imageContact{
+	display: block;
+	width: 100px;
 }
 
 .modal img{
@@ -220,10 +219,37 @@ td{
 	font-size: 75%;
 }
 
+div#cart div{
+	width: 100%;
+}
+
+.contact{
+	margin: 10px;
+	display: inline-block;
+	width: auto;
+}
+
+#mainLabel{
+	font-size: 200%;
+	margin: auto;
+	text-align: center;
+	width:25%;
+}
+
 /* Desktop high */
 
-@media (min-width: 1021px) and (max-width: 1380px){
+@media (min-width: 1361px) and (max-width: 1920px){
+	a{
+		font-size: 250%;
+	}
 
+	label{
+		font-size: 18px;
+	}
+
+	button{
+		width: auto;
+	}
 }
 
 /* Desktop low */
@@ -249,6 +275,20 @@ td{
 	aside#ads img{
 		width: 100%;
 	}	
+
+	div#cart {
+	    display: block;
+	    text-align: center;
+	    padding: 3px;
+	}
+
+	div#cart div{
+		width: auto;
+	}
+
+	.cartImg {
+		width: 50%;
+	}
 }
 
 /* tablet */
@@ -277,18 +317,28 @@ td{
 
 	aside#menu img{
 		display: none;
-	}	
+	}
+
+	div#cart {
+	    display: block;
+	    text-align: center;
+	    padding: 3px;
+	}
+
+	div#cart div{
+		width: auto;
+	}
+
+	.cartImg {
+		width: 75%;
+	}
 }
 
 /* mobile */
 
 @media only screen and (max-width: 480px){
 	
-	aside img{
-		width: 50px;
-		max-width: 50px;
-	}
-
+	
 	aside, article{
 		width: 80%;
 		margin-bottom: 20px;
@@ -315,5 +365,25 @@ td{
 
 	aside#ads img{
 		width: 100%;
+		height: 500px;
+	}
+
+	#add{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	div#cart {
+	    display: block;
+	    text-align: center;
+	    padding: 3px;
+	}
+
+	div#cart div{
+		width: auto;
+	}
+
+	.cartImg {
+		width: 75%;
 	}
 }

@@ -189,7 +189,7 @@ var selection = window.location.search.substr(1)
 //Methods
 
 function generateAds(){
-	document.getElementById('ads').innerHTML = '<img alt="add" src="img/ads/' + Math.floor((Math.random())+1) + '.jpg">'
+	document.getElementById('ads').innerHTML = '<img alt="add" src="img/ads/' + Math.floor((Math.random()*3)+1) + '.jpg">'
 }
 
 function generateCart(){
@@ -232,8 +232,14 @@ function closeModal(){
 function generateContent(){
 	var text = ""
 
-	if(selection == "" || selection == "promotions" || selection == "contact"){
-		document.getElementById('main').innerHTML = ""
+	if(selection == ""){
+		document.getElementById('main').innerHTML = '<image id="image" src="img/home.jpg"><br><label id="mainLabel">Welcome to Dragon Technologies</label>'
+	}
+
+	if(selection == "contact"){
+		document.getElementById('main').innerHTML = '<p class="contact"><a href="https://www.twitter.com"><img id="imageContact" src="img/twitter-logo.png"><label>Twitter</label></a></p>'
+		+'<p class="contact"><a href="https://www.youtube.com"><img id="imageContact" src="img/yt-logo.png"><label>YouTube</label></a></p>'
+		+'<p class="contact"><a href="https://www.facebook.com"><img id="imageContact" src="img/facebook-logo.png"><label>Facebook</label></a></p>'
 	}
 
 	else if(selection == "mouse" || selection == "keyboard" || selection == "monitor" || selection == "headset" || selection == "pc"){
